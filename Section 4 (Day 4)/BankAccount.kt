@@ -1,0 +1,41 @@
+package com.example.kotlinbasics
+
+class BankAccount(
+    var accountHolder: String,
+    var balance: Double)
+{
+    private val transactionHistory = mutableListOf<String>()
+
+    //внесение
+    fun deposit(amount: Double){
+        balance += amount
+        //balance = balance + amount
+        transactionHistory.add("$accountHolder deposited $$amount")
+    }
+
+    //вывод
+    fun withdraw(amount: Double){
+        if(amount <= balance){
+            // we can withdraw
+            balance -= amount
+            transactionHistory.add("$accountHolder withdrew $$amount")
+        }else{
+            // we cannot withdraw money
+            println("You don't have the funds to withdraw $$amount")
+        }
+    }
+
+    fun displayTransactionHistory(){
+        println("Transaction history for $accountHolder")
+        for(transaction in transactionHistory){
+            println(transaction)
+        }
+
+    }
+
+    fun acctBalance(): Double{
+//        println("$accountHolder's balance is $balance")
+        return balance
+    }
+
+}
