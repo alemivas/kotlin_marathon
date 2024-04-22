@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "981242782155",
+    "project_id": "mychat-1537d",
+    "storage_bucket": "mychat-1537d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981242782155:android:002d5c29ce95a7c593d64e",
+        "android_client_info": {
+          "package_name": "com.example.chatroom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwB6378q9k7tX82wR6P33KsCApQdPsAuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
